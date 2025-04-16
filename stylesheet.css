@@ -2,6 +2,10 @@ h1{
     color: rgb(132, 134, 242)
 }
 
-ul #mainNav{
+ul#mainNav {
     list-style-type: none;
+}
+
+img{
+    width: %30;
 }
