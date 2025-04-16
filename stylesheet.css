@@ -1,20 +1,51 @@
+
+body{
+    background-color: rgb(49, 49, 49);
+    /*background-image: url("https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhat-did-dean-norris-mean-by-this-v0-q1806giuoo5b1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D7d9061c1e7a5a022a6f31ea84c9eab65843d63ad");
+    background-repeat: none;*/
+    background-image: url("images/Hank.jpg");
+    background-size: 100em;
+    background-blend-mode:luminosity;
+  
+}
+
 h1{
-    text-decoration-line: overline underline;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration-line: overline;
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
-    font-size: 2.5em;
+    font-size: 5em;
     color: rgb(132, 134, 242)
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
 }
 
 ul#mainNav {
     list-style-type: none;
+    
 }
 
 img{
-    width: %30;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 40%;
+} 
 
 p{
     line-height: 1em;
 }
+
+a:link { color: rgb(35, 44, 167); }
+a:visited { color: orange; }
+a:hover { color: yellow; }
+a:active { color: purple; }
