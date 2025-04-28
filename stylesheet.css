@@ -1,5 +1,16 @@
+* {margin:0; padding: 0;
+}
+
+#wrapper {
+        width: 80%;
+        margin: auto;
+}
+
+
 
 body{
+   
+
     background-color: rgb(49, 49, 49);
     /*background-image: url("https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhat-did-dean-norris-mean-by-this-v0-q1806giuoo5b1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D7d9061c1e7a5a022a6f31ea84c9eab65843d63ad");
     background-repeat: none;*/
