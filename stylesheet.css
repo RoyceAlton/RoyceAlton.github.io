@@ -1,12 +1,27 @@
-* {margin:0; padding: 0;
-}
+* {margin:0; padding: 0;}
 
-#wrapper {
+
+
+    #wrapper {
         width: 80%;
         margin: auto;
-}
-
-
+    }    
+    .columns {float:left;}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .clear-left {
+            clear:left;
+        }
 
 body{
    
@@ -15,7 +30,7 @@ body{
     /*background-image: url("https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhat-did-dean-norris-mean-by-this-v0-q1806giuoo5b1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D7d9061c1e7a5a022a6f31ea84c9eab65843d63ad");
     background-repeat: none;*/
     background-image: url("images/Hank.jpg");
-    background-size: 100em;
+    background-size: 150em;
     background-blend-mode:luminosity;
   
 }
@@ -24,11 +39,14 @@ h1{
     text-transform: capitalize;
     text-align: center;
     text-decoration-line: overline;
+    margin: 5%;
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
     font-size: 5em;
     color: rgb(132, 134, 242)
+    index-z auto;
+    position:static
 }
 
 h2{
@@ -50,6 +68,7 @@ img{
     margin-right: auto;
     width: 30%;
     height: 40%;
+    padding: 2.5em;
 } 
 
 p{
@@ -60,3 +79,26 @@ a:link { color: rgb(35, 44, 167); }
 a:visited { color: orange; }
 a:hover { color: yellow; }
 a:active { color: purple; }
+
+@media screen and (max-device-width: 480px) {
+    .column {
+      float: none;
+    }
+  }
+
+  #wrapper {
+    width: 80%;
+    margin: auto;
+    }
+    .column {
+    width: 33.33%;
+    float: left;
+    margin: 10%;
+    }
+    @media only screen and (max-width: 480px) {
+    .column {
+    width: 100%;
+    float: left;
+    margin:0%;
+}
+}
