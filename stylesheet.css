@@ -55,11 +55,12 @@ h2{
 
 h3{
     text-align: center;
+    
 }
 
 ul#mainNav {
     list-style-type: none;
-    
+    display:block;
 }
 
 img{
