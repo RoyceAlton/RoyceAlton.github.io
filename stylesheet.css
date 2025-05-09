@@ -30,31 +30,31 @@ body{
     /*background-image: url("https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhat-did-dean-norris-mean-by-this-v0-q1806giuoo5b1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D7d9061c1e7a5a022a6f31ea84c9eab65843d63ad");
     background-repeat: none;*/
     background-image: url("images/Hank.jpg");
-    background-size: 150em;
+    background-size: 50em;
     background-blend-mode:luminosity;
   
 }
 
 h1{
     text-transform: capitalize;
-    text-align: center;
+    /* text-align: center; */
     text-decoration-line: overline;
-    margin: 5%;
+    /* margin: 5%; */
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
     font-size: 5em;
-    color: rgb(132, 134, 242)
-    index-z auto;
-    position:static
+    color: rgb(132, 134, 242);
+    z-index: auto;
+    /* position:static */
 }
 
 h2{
-    text-align: center;
+     /* text-align: center; */
 }
 
 h3{
-    text-align: center;
+    /* text-align: center; */
     
 }
 
@@ -67,9 +67,9 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-    height: 40%;
-    padding: 2.5em;
+    width: 50%;
+    height: auto;
+    /* padding: 1em; */
 } 
 
 p{
