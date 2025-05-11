@@ -23,15 +23,26 @@
             clear:left;
         }
 
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        
 body{
    
 
-    background-color: rgb(49, 49, 49);
-    /*background-image: url("https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhat-did-dean-norris-mean-by-this-v0-q1806giuoo5b1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D7d9061c1e7a5a022a6f31ea84c9eab65843d63ad");
-    background-repeat: none;*/
-    background-image: url("images/Hank.jpg");
-    background-size: 50em;
-    background-blend-mode:luminosity;
+    background-color: #fbfbfb;
+    /* background-image: url("images/Hank.jpg"); */
+    /* background-size: 50em; */
+    /* background-blend-mode:luminosity; */
   
 }
 
@@ -44,42 +55,77 @@ h1{
     font-weight: 700;
     font-style: normal;
     font-size: 5em;
-    color: rgb(132, 134, 242);
+    color: #8486f2;
     z-index: auto;
     /* position:static */
 }
 
 h2{
+    padding-top: 40px;
+    text-align: right;
      /* text-align: center; */
 }
 
 h3{
+    text-align: right;
     /* text-align: center; */
     
 }
 
 ul#mainNav {
+    padding-top: 10px;
+    text-align: right;
     list-style-type: none;
     display:block;
 }
 
+/* position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1; */
+
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+    /* margin-left: auto;
+    margin-right: auto; */
     width: 50%;
     height: auto;
-    /* padding: 1em; */
 } 
 
-p{
-    line-height: 1em;
+.shred{
+    position:absolute;
+    left: 40px;
+    top: 40px;
+    z-index:-1;
+    padding: 10px;
 }
 
-a:link { color: rgb(35, 44, 167); }
-a:visited { color: orange; }
-a:hover { color: yellow; }
-a:active { color: purple; }
+.hr1{
+    padding-top:5px;
+
+}
+
+.hank{
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index:-1;
+}
+
+p{
+   padding:0%;
+    line-height: 1em;
+    overflow: auto;
+}
+
+footer{
+    padding-top: 20px;
+}
+
+a:link { color: #232ca7; }
+a:visited { color: #ffa500; }
+a:hover { color: #ffff00; }
+a:active { color: #800080; }
 
 @media screen and (max-device-width: 480px) {
     .column {
