@@ -24,18 +24,19 @@
         }
 
 
-    .column {
+    /* .column {
         float: left;
         width: 33.33%;
         padding: 5px;
-        }
+        } */
 
-    .row::after {
+    /* .row::after {
         content: "";
         clear: both;
         display: table;
         }
-        
+         */
+
 body{
    
 
@@ -88,6 +89,7 @@ img{
 
     /* margin-left: auto;
     margin-right: auto; */
+    display: block;
     width: 50%;
     height: auto;
 } 
