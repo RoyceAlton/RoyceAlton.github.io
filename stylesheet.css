@@ -1,4 +1,8 @@
-* {margin:0; padding: 0;}
+* { 
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 
@@ -7,6 +11,7 @@
         margin: auto;
     }    
     .columns {float:left;}
+    .columns-right {float: right;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -19,9 +24,20 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-    .clear-left {
+    /* .clear-left:after {
             clear:left;
         }
+    .clear-both:after {
+        clear: both;
+    } */
+
+    /* Self Clearing Goodness */
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both; 
+    }
 
 
     /* .column {
@@ -90,7 +106,7 @@ img{
     /* margin-left: auto;
     margin-right: auto; */
     display: block;
-    width: 50%;
+    width: 100%;
     height: auto;
 } 
 
@@ -104,6 +120,7 @@ img{
 
 .hr1{
     padding-top:5px;
+    width: 40%;
 
 }
 
@@ -115,13 +132,21 @@ img{
 }
 
 p{
-   padding:0%;
-    line-height: 1em;
+   line-height: 1em;
+  
     /* overflow: auto; */
+}
+
+#bio {
+    font-size: 2em;
+    padding: 20% 0 0 5%;
+
 }
 
 footer{
     padding-top: 20px;
+    background-image: url('images/Hank.jpg');
+    background-size: cover;
 }
 
 a:link { color: #232ca7; }
