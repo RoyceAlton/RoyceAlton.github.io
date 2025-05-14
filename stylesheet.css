@@ -117,7 +117,7 @@ img{
 p{
    padding:0%;
     line-height: 1em;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 footer{
