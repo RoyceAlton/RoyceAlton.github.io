@@ -10,3 +10,35 @@
         height: auto;
     
     }
+
+    .large-text {
+        font-size: 2rem;
+      }
+      
+      .small-text {
+        font-size: 0.875rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-family: 'Space Mono', monospace;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+      
+      p {
+        font-size: .8rem;
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* aligns content to the right inside the column */
+        gap: 0.5rem;
+      }
