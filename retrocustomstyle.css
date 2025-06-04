@@ -1,0 +1,333 @@
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+      }      
+      
+  .tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .jacquarda-bastarda-9-regular {
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .micro-5-regular {
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .jacquard-12-regular {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }  
+  
+
+/* // <weight>: Use a value from 300 to 800
+// <uniquifier>: Use a unique and descriptive class name */
+
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+h1{ 
+    color: #48FF00;
+    text-align: center;
+    font-family: Tiny5;
+    font-size: clamp(4rem, 12vw, 30rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2{
+    color: #48FF00;
+    text-align: center;
+    font-family: "Jacquarda Bastarda 9";
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Tiny5;
+    font-size: clamp(1rem, 2vw, 2.25rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.arcade-tinyred{
+    color: #D35454;
+    text-align: center;
+    font-family: Tiny5;
+    font-size: clamp(1rem, 2vw, 2.25rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h4{
+color: #FFF;
+text-align: center;
+font-family: "Jacquard 12";
+font-size: 12.6875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+h5{ 
+color: #FFF;
+text-align: center;
+font-family: "Micro 5";
+font-size: 10.85944rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.arcade-body1{
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+startbox{
+    width: 85rem;
+    height: 57.875rem;
+    flex-shrink: 0;
+    z-index: -1
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .subtitle1 {
+    margin-top: -4rem;
+  }
+  
+  .page-outline {
+  position: absolute;
+  transform: scale(.98);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.below-frame {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+  
+  .below-frame h4,
+  .below-frame h5 {
+    margin: 0;
+    line-height: 1;
+  }
+
+  .ui-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .ui-windowtext1{
+    width: 90%;
+    max-width: 400px;
+    height: 300px; 
+    margin: 2rem auto;
+    border: 3px solid #000000;
+    background-color: rgb(255, 255, 255);
+    font-family: "Open Sans", normal;
+    color: #000000;
+    position: relative;
+    padding-top: 1rem;
+    border-radius: 1.731rem;
+    overflow-y: auto;
+  }
+
+  .ui-windowimage1{
+    flex:1;
+    width: 90%;
+    max-width: 850px;
+    margin: 2rem auto;
+    border: 3px solid #000000;
+    background-color: rgb(255, 255, 255);
+    font-family: "Tiny5", monospace;
+    color: #000000;
+    position: relative;
+    padding-top: 1rem;
+    border-radius: 1.731rem;
+  }
+  
+  .ui-windowimage2{
+    flex:1;
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 3px solid #000000;
+    background-color: rgb(255, 255, 255);
+    font-family: "Tiny5", monospace;
+    color: #000000;
+    position: relative;
+    padding-top: 1rem;
+    border-radius: 1.731rem;
+  }
+
+  .ui-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0rem 1rem;
+    border-bottom: 2px solid #000000;
+    color: #000;
+    font-family: Tiny5;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    position: relative; 
+  }
+  
+  
+.ui-header span{
+    line-height:1;
+    text-align:center;
+}
+
+  .ui-body {
+    padding: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  .ui-close {
+    position:absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+    display: flex;
+  }
+  
+  
+  .ui-close svg {
+    width: 3rem;
+    height: 3rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .ui-close:hover svg {
+    transform: scale(1.2);
+    filter: brightness(150%);
+  }
+  
+  @keyframes bobStep {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  .retro-bob {
+    animation: bobStep 1.5s steps(4) infinite;
+  }
+  
+  .bump-right {
+    padding-left: 4rem;
+  }
+
+  .responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .rounded {
+    border-radius: 1rem;
+  }
+  
+  .pongimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20%;
+    height: auto;
+  }
+  
+.nesimg{
+  margin-left:auto;
+  margin-right:0;
+  text-align:right;
+  max-width:70%;
+  height:auto;
+}
+
+.castimg{
+  z-index:-1;
+  max-width: 1200px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.gbimg{
+  max-width:600px;
+  height: auto;
+}
+  
+  /* color: #48FF00;
+text-align: center;
+font-family: "Jacquarda Bastarda 9";
+font-size: 80px;
+font-style: normal;
+font-weight: 400;
+line-height: normal; */
+

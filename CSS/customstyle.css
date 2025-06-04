@@ -11,6 +11,20 @@
     
     }
 
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 2s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
     .large-text {
         font-size: 2rem;
       }
@@ -30,15 +44,39 @@
 
       h3 {
         font-size: 1.2rem;
+        margin-bottom: 0;
+        margin-top: 0;
       }
       
       p {
-        font-size: .8rem;
+        font-size: .6rem;
       }
 
       .sidebar {
+        text-align: right;
         display: flex;
         flex-direction: column;
-        align-items: flex-end; /* aligns content to the right inside the column */
-        gap: 0.5rem;
+        align-items: flex-end;
+        gap: 0.7rem;
       }
+      
+      
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 1.5rem;
+      }
+      
+      .sidebar li {
+        margin-bottom: 0.3rem;
+      }
+      
+      .hank-image {
+        transition: filter 0.5s ease;
+      }
+      
+      .hank-image:hover {
+        filter: saturate(500%) brightness(120%) sepia(100%) hue-rotate(-50deg);
+      }
+      
