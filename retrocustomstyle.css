@@ -10,7 +10,7 @@ body {
   .container {
         padding-left: 0;
         padding-right: 0;
-        max-width: 100%;
+        /* max-width: 100%; */
       }      
       
   .tiny5-regular {
@@ -36,7 +36,6 @@ body {
     font-weight: 400;
     font-style: normal;
   }  
-  
 
 /* // <weight>: Use a value from 300 to 800
 // <uniquifier>: Use a unique and descriptive class name */
@@ -59,6 +58,10 @@ h1{
     line-height: normal;
 }
 
+.arcade-red{
+  color: #F00;
+}
+
 h2{
     color: #48FF00;
     text-align: center;
@@ -79,19 +82,108 @@ h3{
     line-height: normal;
 }
 
+.top-h3-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+.top-h3-wrapper h3 {
+  flex: 1 1 30%;
+  text-align: center;
+  margin: 0.25rem 0;
+}
+
+
 .arcade-tinyred{
-    color: #D35454;
-    text-align: center;
-    font-family: Tiny5;
-    font-size: clamp(1rem, 2vw, 2.25rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  text-align:center; 
+  margin-top: 3.5rem; 
+  margin-bottom: .5rem;
+  color: #D35454;
+  text-align: center;
+  font-family: Tiny5;
+  font-size: clamp(1rem, 2vw, 2.25rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.arcade-tinywhite{
+  text-align:center;
+   margin-top: -3.5rem;
+}
+
+.mag-header{
+  justify-content: left;
+  display: flex;
+  text-align: left;
+  /* align-items: baseline; This doesnt work the same in css than in-line */
+  gap: 3rem; 
+  padding-left: 3rem; 
+}
+
+.leftpadding{
+  padding-left: 3rem;
+}
+
+.rightpadding{
+  padding-right: 3rem;
+}
+
+.alignbaseline {
+  align-items:baseline;
+}
+
+.atari-header{
+  justify-content:left;
+  display: flex; 
+  gap: 3rem;
+  padding-left: 3rem;
+}
+
+.atari-year{
+  padding-right:2rem;
+}
+
+.nes-header{
+  justify-content:right;
+  display: flex; 
+  gap: 1rem;
+  padding-left: 3rem; 
+}
+
+.nes-year{
+  padding-right:2rem;
+}
+
+.sega-header{
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding-left: 3rem;
+  justify-content:right;
+}
+
+.sega-year{
+  padding-right:2rem;
+}
+
+.gb-header{
+  display: flex;
+  align-items: baseline;
+  gap: 1rem; 
+  padding-left: 3rem; 
+  justify-content:left;
+}
+
+.gb-year{
+  padding-right:2rem;
 }
 
 h4{
 color: #FFF;
-text-align: center;
 font-family: "Jacquard 12";
 font-size: 12.6875rem;
 font-style: normal;
@@ -101,7 +193,6 @@ line-height: normal;
 
 h5{ 
 color: #FFF;
-text-align: center;
 font-family: "Micro 5";
 font-size: 10.85944rem;
 font-style: normal;
@@ -109,20 +200,53 @@ font-weight: 400;
 line-height: normal;
 }
 
+h6{
+  color: #FFF;
+  text-align: center;
+  font-family: Tiny5;
+  font-size: 17.82344rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.arcade-M90{
+  color: #FFF;
+  text-align: center;
+  font-family: "Micro 5";
+  font-size: 24.31225rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin:0;
+}
+
+.arcade-jac2000{
+  color: #FFF;
+  font-family: "Jacquarda Bastarda 9";
+  font-size: 30rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
 .arcade-body1{
-    font-family: "Open Sans";
-    font-size: 1.5rem;
+    font-family: "Tiny 5";
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-startbox{
+/* startbox{
     width: 85rem;
     height: 57.875rem;
     flex-shrink: 0;
     z-index: -1
-}
+} */
 
 .center-screen {
     display: flex;
@@ -152,50 +276,57 @@ startbox{
 }
 
 .below-frame {
-    align-items: center;
     display: flex;
-    justify-content: center;
-    text-align: left;
-    margin-top: 2rem;
-    padding: 0 2rem;
+    /* margin-top: 2rem; */
+    /* padding: 0 2rem; */
   }
   
-  .below-frame h4,
-  .below-frame h5 {
+  .below-frame h4
+  .below-frame h5
+  .below-frame h6 {
     margin: 0;
+    padding: 0;
     line-height: 1;
   }
 
-  .ui-container {
+  .ui-container {    
     display: flex;
+    flex-wrap:nowrap;
     gap: 1rem;
+    margin:0;
   }
 
+  .ui-container .columns {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+
   .ui-windowtext1{
-    width: 90%;
-    max-width: 400px;
-    height: 300px; 
-    margin: 2rem auto;
+    flex:1;
+    /* width: 70%; */
+    /* height: 350px;  */
+    margin-top: 2rem;
+    /* margin-left: 2rem; */
+    margin-right:0;
     border: 3px solid #000000;
     background-color: rgb(255, 255, 255);
-    font-family: "Open Sans", normal;
+    font-family: "Tiny 5", normal;
     color: #000000;
-    position: relative;
     padding-top: 1rem;
     border-radius: 1.731rem;
     overflow-y: auto;
   }
 
+
   .ui-windowimage1{
     flex:1;
-    width: 90%;
-    max-width: 850px;
-    margin: 2rem auto;
+    margin-top:2rem;
     border: 3px solid #000000;
     background-color: rgb(255, 255, 255);
     font-family: "Tiny5", monospace;
     color: #000000;
-    position: relative;
+    /* position: relative; */
     padding-top: 1rem;
     border-radius: 1.731rem;
   }
@@ -203,8 +334,7 @@ startbox{
   .ui-windowimage2{
     flex:1;
     width: 90%;
-    max-width: 600px;
-    margin: 2rem auto;
+    /* max-width: 600px; */
     border: 3px solid #000000;
     background-color: rgb(255, 255, 255);
     font-family: "Tiny5", monospace;
@@ -219,7 +349,7 @@ startbox{
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    padding: 0rem 1rem;
+    padding: 0rem 0rem;
     border-bottom: 2px solid #000000;
     color: #000;
     font-family: Tiny5;
@@ -240,6 +370,7 @@ startbox{
   .ui-body {
     padding: 1.5rem;
     line-height: 1.4;
+    font-family: Micro 5;
   }
   
   .ui-close {
@@ -252,6 +383,7 @@ startbox{
     cursor: pointer;
     padding: 0;
     margin-left: auto;
+    margin-right:0;
     display: flex;
   }
   
@@ -284,6 +416,10 @@ startbox{
     padding-left: 4rem;
   }
 
+  .hard-bump-right{
+    padding-left: 9rem;
+  }
+
   .responsive-img {
     width: 100%;
     height: auto;
@@ -299,35 +435,139 @@ startbox{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 20%;
+    width: 20%;
     height: auto;
+    padding-top:2rem;
   }
   
 .nesimg{
   margin-left:auto;
   margin-right:0;
-  text-align:right;
-  max-width:70%;
+  width: 50%;
   height:auto;
 }
 
+.marioimg{
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-right:0;
+  object-fit: contain;
+}
 .castimg{
   z-index:-1;
-  max-width: 1200px;
+  width:60%;
   height: auto;
-  flex-shrink: 0;
+  margin-top:0;
+  margin-bottom:0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gbimg{
-  max-width:600px;
+  width:30%;
   height: auto;
+  display:block;
+  z-index: -1;
+  margin-right:0;
+  margin-left:0;
 }
-  
-  /* color: #48FF00;
-text-align: center;
-font-family: "Jacquarda Bastarda 9";
-font-size: 80px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; */
+
+/* .yoshiimg{
+  width: 50%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+} */
+
+.n64img{
+  z-index:-1;
+  width:60%;
+  height: auto;
+  margin-top:0;
+  margin-bottom:0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:3rem;
+}
+
+.nokia1img{
+  width:80%;
+  margin-left:10rem;
+  height: auto;
+  z-index: -1;
+}
+
+.ds1img{
+  width:50%;
+  height:auto;
+}
+
+.xbox1img{
+  width:40%;
+  height:auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#removemargins{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin:0 !important;
+}
+
+#marginright{
+  padding-right: 0 !important;
+}
+
+#justify-right{
+  Justify-content:right;
+}
+
+#justify-center{
+  justify-content: center;
+}
+
+
+
+#pong-wrapper {
+  width: 70vw;
+  height: 60vw;
+  aspect-ratio: 4 / 3;
+  margin: 0rem auto;
+  margin-bottom:0;
+  position: center;
+  background: black; /* fallback in case canvas fails */
+}
+
+#pong {
+  width: 100%;
+  height: 70%;
+  display: block;
+  background: black;
+  margin:0;
+}
+
+.center-text{
+  text-align:center;
+  justify-content:center;
+  display:flex;
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.tight-stack {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+
 
