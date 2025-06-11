@@ -27,29 +27,36 @@
 
     .large-text {
         font-size: 2rem;
+        color: #FFF;
       }
       
       .small-text {
         font-size: 0.875rem;
+        color: #FFF;
       }
 
       h1 {
         font-size: 2.5rem;
-        font-family: 'Space Mono', monospace;
+        font-family: 'Jacquarda Bastarda 9', monospace;
+        color: #FFF;
       }
 
       h2 {
         font-size: 1.5rem;
+        color: #FFF;
       }
 
       h3 {
         font-size: 1.2rem;
         margin-bottom: 0;
         margin-top: 0;
+        color: #FFF;
+        letter-spacing:normal;
       }
       
       p {
         font-size: .6rem;
+        color: #FFF;
       }
 
       .sidebar {
@@ -79,4 +86,73 @@
       .hank-image:hover {
         filter: saturate(500%) brightness(120%) sepia(100%) hue-rotate(-50deg);
       }
+
+      body {
+        margin: 0;
+        background: black;
+        /* overflow: hidden; */
+      }
       
+      .pacman-container {
+        position: relative;
+        left: 0;
+        top: 50%;
+        z-index: -1;
+        transform: translateY(-50%);
+        animation: move-across 5s linear infinite;
+      }
+      
+      .pacman {
+        width: 20px;
+        height: auto;
+      }
+      
+      @keyframes move-across {
+        0% { left: -60px; }
+        100% { left: 100vw; }
+      }
+      
+      .leftpadding{
+        padding-left:3rem;
+      }
+      
+      b{
+        font-size: .6rem;
+        color: #FFF;
+      }
+
+      html{
+        margin-top: 10px;
+        font-size:20px;
+        font-family: "HelveticaNeue";
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    
+    }
+
+    .tiny5-regular {
+      font-family: "Tiny5", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .jacquarda-bastarda-9-regular {
+      font-family: "Jacquarda Bastarda 9", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+    .micro-5-regular {
+      font-family: "Micro 5", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+    .jacquard-12-regular {
+      font-family: "Jacquard 12", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }  

@@ -22,49 +22,63 @@
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
                 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
- 
-<style>
 
-    html{
-        margin-top: 10px;
-        font-size:20px;
-        font-family: "HelveticaNeue";
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    
-    }
-
-</style> 
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jacquarda+Bastarda+9&family=Micro+5&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&display=swap" rel="stylesheet">
 
 </head>
-
 
 
 <body class="container">
 
         <div class="row" style="display: flex; justify-content: space-between; align-items: flex-start;">
             
-            <div class="nine columns">
+            <div class="row nine columns">
 
-                <div>
-                    <h1 class="large-text"> Royce Alton</h1>
-                </div>
+                    <h1 class="large-text"> royce alton</h1>
+
+                    <div class="pacman-container">
+                        <svg class="pacman" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 533 562" fill="none">
+                            <path class="pacman-mouth" fill="#FFCC00" d="M531.862 406.919C503.454 463.486 456.77 508.798 399.381 535.508C341.992 562.218 277.263 568.758 215.691 554.069C154.119 539.38 99.3138 504.323 60.1634 454.582C21.0131 404.841 -0.186936 343.333 0.00124201 280.033C0.18942 216.733 21.7547 155.353 61.2001 105.846C100.646 56.3385 155.658 21.6074 217.316 7.28459C278.975 -7.03826 343.664 -0.112965 400.893 26.9375C458.122 53.9879 504.536 99.5772 532.607 156.313L280.914 280.87L531.862 406.919Z" />
+
+                        </svg>
+                      </div>
+                      
+                      <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                          const pacmanPath = document.querySelector('.pacman-mouth');
+                      
+                          const mouthClosed = "M 280 280 m -260 0 a 260 260 0 1 0 520 0 a 260 260 0 1 0 -520 0";
+                          
+                          const mouthOpen = "M531.862 406.919C503.454 463.486 456.77 508.798 399.381 535.508C341.992 562.218 277.263 568.758 215.691 554.069C154.119 539.38 99.3138 504.323 60.1634 454.582C21.0131 404.841 -0.186936 343.333 0.00124201 280.033C0.18942 216.733 21.7547 155.353 61.2001 105.846C100.646 56.3385 155.658 21.6074 217.316 7.28459C278.975 -7.03826 343.664 -0.112965 400.893 26.9375C458.122 53.9879 504.536 99.5772 532.607 156.313L217 281L531.862 406.919Z";
+                      
+                          let open = false;
+                      
+                          setInterval(() => {
+                            pacmanPath.setAttribute("d", open ? mouthClosed : mouthOpen);
+                            open = !open;
+                          }, 200);
+                        });
+                      </script>
+
+            
+                      
+                    
+                  
 
             </div>
             
                 <div class="three columns sidebar">
 
-                        <h3 class>Digital Design 2</h3>
+                        <h3>Digital Design 2</h3>
                         <h3>Spring 2025</h3>
 
                         <nav>
 
                             <ul class="u-text-right small-text sidebar-nav">
 
-                                <li><a href="https://www.figma.com/proto/HiyB8jjy1g3oJc2UeJSy7c/Zealandia_Project1?node-id=130-53&p=f&t=wt24vA62bpUSLxmn-1&scaling=min-zoom&content-scaling=fixed&page-id=129%3A8&starting-point-node-id=130%3A53&show-proto-sidebar=1">Project 1</a> </li>
+                                <li><a href="https://www.figma.com/proto/HiyB8jjy1g3oJc2UeJSy7c/Zealandia_Project1?page-id=129%3A8&team_id=1441238124234594208&node-id=130-53&starting-point-node-id=130%3A53&content-scaling=fixed&scaling=scale-down&t=q71BF6eE5Rh6dpJB-1">Project 1 Desktop</a> </li>
                                 <li><a href="https://www.figma.com/slides/oppT47isMjGBNMjBZkvizS/Zealandia_Redesign_CaseStudy?node-id=1-64&t=sJvJs7eQ5FYPDTqT-1">Project 1 Process</a></li>
                                 <li><a href="https://roycealton.github.io/retroindex.html">Project 2</a></li>
                                 <li><a href="https://www.figma.com/slides/waf6C8g664S81HnipLOTT4/Prj2_CaseStudy?node-id=1-7&t=th3DxgeLJtktxtrw-1">Project 2 Process</a></li>
@@ -73,11 +87,7 @@
 
                         </nav>
                 </div>
-
-            
-
-        </div>
-      
+        </div>    
 
     <div class="row">
 
@@ -87,7 +97,7 @@
 
         </div>
 
-        <article class="six columns">  
+        <article class="six columns leftpadding">  
                     
                 <p>Hello my name is Royce Alton. I’m a student in the Design program at Western Washington University. Im currently interested in Branding, Illustration, Motion and a little bit of UX/UI. 
                     On the branding sides of things I love exploring textual and analog methods of making digital logos, and elements that can be used to create a brand identity. 
@@ -118,7 +128,7 @@
             
                 <b>Copyright 2025</b>
             <p> <a href="https://Roycealton.com" target="_blank">Portfolio-Website</a> </p>
-            <p> <a href="Royce.j.alton@gmail.com">royce.j.alton@gmail.com</a> </p>
+            <p><a href="mailto:Royce.j.alton@gmail.com">royce.j.alton@gmail.com</a> </p>
 
         </footer>
 
@@ -126,6 +136,9 @@
             <img class="hank-image fade-in" src="images/Hank.jpg" alt="My Image" />
         </div>
 
+        <div> 
+            <img class="fade-in" src="images/cowabummer.JPG" alt="My Image" />
+        </div>
 </body>
 
 </html>
