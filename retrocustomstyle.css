@@ -569,5 +569,8 @@ html {
   margin-bottom: 0rem;
 }
 
+a[href="#restart"] {
+  text-decoration: none;
+}
 
 
